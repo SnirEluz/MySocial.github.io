@@ -1,0 +1,201 @@
+.Login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(240, 240, 240);
+    height: 100vh;
+    .LoginBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 450px;
+        height: auto;
+        box-shadow: 0px 0px 15px 5px #dbdbdb;
+        border-radius: 5px;
+        background-color: white;
+        padding: 30px;
+        h1 {
+            font-weight: 500;
+            align-self: flex-start;
+        }
+        input {
+            height: 60px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid rgb(206, 206, 206);
+            outline: none;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 15px;
+            width: 500;
+        }
+        input:focus::placeholder {
+            color: transparent;
+        }
+        input::placeholder {
+            font-weight: 500;
+            color: rgb(153, 166, 177);
+        }
+        input:focus {
+            border: 1px solid #0074d9;
+        }
+        .LoginButton {
+            width: 100%;
+            height: 50px;
+            cursor: pointer;
+            border: none;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-weight: 500;
+            font-size: 16px;
+            background-color: #001f3f;
+            color: white;
+        }
+        .LoginButton:hover {
+            background-color: #08335e;
+        }
+        .MissingInfoMessage {
+            margin-top: 10px;
+            color: red;
+            font-weight: 400;
+        }
+        .RegisterBox {
+            border-top: 1px solid rgba(206, 206, 206, 0.795);
+            width: 100%;
+            .RegisterButton {
+                cursor: pointer;
+                width: 100%;
+                height: 50px;
+                border: none;
+                margin-top: 20px;
+                border-radius: 5px;
+                font-weight: 500;
+                font-size: 16px;
+                background-color: #0074d9;
+                color: white;
+            }
+            .RegisterButton:hover {
+                background-color: #2a87da;
+            }
+        }
+    }
+}
+.Register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(240, 240, 240);
+    height: 100vh;
+    .RegisterBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 450px;
+        height: auto;
+        box-shadow: 0px 0px 15px 5px #dbdbdb;
+        border-radius: 5px;
+        background-color: white;
+        padding: 30px;
+        h1 {
+            font-weight: 500;
+            align-self: flex-start;
+        }
+        input {
+            height: 55px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #cecece;
+            outline: none;
+            padding: 10px;
+            margin-top: 15px;
+            font-size: 15px;
+            width: 500;
+        }
+        select {
+            height: 55px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #cecece;
+            outline: none;
+            padding: 10px;
+            margin-top: 15px;
+            font-size: 17px;
+            width: 500;
+        }
+        input::placeholder {
+            font-weight: 500;
+            color: rgb(153, 166, 177);
+        }
+        input:focus {
+            border: 1px solid #0074d9;
+        }
+        .Birthday {
+            display: flex;
+            flex-direction: column;
+            h4 {
+                margin-top: 10px;
+            }
+            .BirthdayInp {
+                gap: 10px;
+                display: flex;
+            }
+            .NumberAndCountry {
+                gap: 10px;
+                display: flex;
+            }
+        }
+        .RegisterButton {
+            width: 100%;
+            height: 50px;
+            cursor: pointer;
+            border: none;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-weight: 500;
+            font-size: 16px;
+            background-color: #001f3f;
+            color: white;
+        }
+        .RegisterButton:hover {
+            background-color: #08335e;
+        }
+        .MissingInfoMessage {
+            margin-top: 10px;
+            color: red;
+            font-weight: 400;
+        }
+        .LoginBox {
+            border-top: 2px solid rgba(206, 206, 206, 0.795);
+            width: 100%;
+            .LoginButton {
+                cursor: pointer;
+                width: 100%;
+                height: 50px;
+                border: none;
+                margin-top: 20px;
+                border-radius: 5px;
+                font-weight: 500;
+                font-size: 16px;
+                background-color: #0074d9;
+                color: white;
+            }
+            .LoginButton:hover {
+                background-color: #2a87da;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .Login,
+    .Register {
+        .LoginBox,
+        .RegisterBox {
+            width: 90%;
+        }
+    }
+}
